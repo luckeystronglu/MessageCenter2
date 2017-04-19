@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="10dp"
+              android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/msg2_ivhead"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_page_icon_flash"/>
+        <TextView
+            android:id="@+id/msg2_tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/msg2_ivhead"
+            android:text="名字"/>
+
+        <TextView
+            android:id="@+id/msg2_publishtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/msg2_tvname"
+            android:layout_below="@+id/msg2_tvname" />
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:src="@drawable/ic_unfollow"/>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/msg2_publishtime"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/msg2_tvneirong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="内容"/>
+            <ImageView
+                android:id="@+id/msg2_iv"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                />
+            <LinearLayout
+                android:id="@+id/msg2_11address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right">
+        <TextView
+            android:id="@+id/msg2_tvlike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/btn_feed_like"/>
+        <TextView
+            android:id="@+id/msg2_tvreply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="50"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/btn_feed_reply"/>
+    </LinearLayout>
+
+
+</LinearLayout>
